@@ -11,9 +11,9 @@ get '/' do
 end
 
 post '/install' do
-  name = "Orderdesk".to_uri
+  name = "Order Desk".to_uri
   url = "https://#{request.host}/iframe/#{params[:store_id]}/#{params[:api_key]}".to_uri
-  description = "Show orders from Orderdesk in Firma".to_uri
+  description = "Show orders from Order Desk in Firma".to_uri
   icon = "http://www.orderdesk.me/wp-content/themes/orderdesk/images/logo.png".to_uri
 
   if Sinatra::Base.development?
