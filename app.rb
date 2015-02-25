@@ -29,7 +29,7 @@ get '/iframe/:store_id/:api_key' do
 
   api_url = "https://app.orderdesk.me/api/orders"
 
-  num = params[:number].to_uri
+  num = params[:number][2..-1].to_uri
 
   raw = RestClient.get api_url, :params => {:customer_phone => num, :limit => 10}, :content_type => 'application/json', :'ORDERDESK-STORE-ID' => params[:store_id], :'ORDERDESK-API-KEY' => params[:api_key]
 
