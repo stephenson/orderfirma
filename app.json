@@ -1,0 +1,11 @@
+{
+  "name": "Orderdesk and Firmafon",
+  "description": "Integration Orderdesk with Firmafon",
+  "keywords": [
+    "close",
+    "firmafon"
+  ],
+  "website": "https://github.com/stephenson/orderfirma",
+  "repository": "https://github.com/stephenson/orderfirma",
+  "success_url": "/"
+}
